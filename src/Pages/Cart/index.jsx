@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Box, Heading, Divider, VStack, Button, Text } from '@chakra-ui/react'
-import ItemCard from './Components/ItemCard/Card'
+import ItemCard from '../../Components/ItemCard/Card'
 import { Icon } from '@iconify/react';
 
 export default function Cart() {
@@ -10,25 +10,7 @@ export default function Cart() {
     ]
 
 
-    const getData=()=>{
-        fetch('itens.json'
-        ,{
-          headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }
-        }
-        )
-          .then(function(response){
-            return response.json();
-          })
-          .then(function(myJson) {
-            console.log(myJson);
-          });
-      }
-      useEffect(()=>{
-        getData()
-      },[])
+    
 
   return (
     <Box  w="100%" h="100%" p={4} px={40}>
@@ -36,17 +18,17 @@ export default function Cart() {
             <Heading textAlign="center" paddingTop={0} py={4} pb={6}>
                 REVIEW
             </Heading>
-            <Button position="absolute" right="0" top="0" m ={4} h="30px" colorScheme="red">
+            <Button position="absolute" right="0" top="0" m={4} h="30px" colorScheme="red">
                 <Icon icon="bi:trash"/>
                 <Text ml={2}>
                     Remove All Items
                 </Text>
             </Button>
             <Divider borderColor="white" mb={4}/>
-            <VStack divider={<Divider  />} gap={4}>
+            <VStack divider={<Divider  />} gap={6}>
                 {items.map((item)=>(<ItemCard {...item}/>))}
             </VStack>
-            <Button w="100%" mt={3} bg="#ff6500" color="#fff" fontWeight="600">PURCHASE</Button>
+            <Button w="100%" mt={8} bg="#ff6500" color="#fff" fontWeight="600">PURCHASE</Button>
         </Box> 
     </Box>
   )

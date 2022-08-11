@@ -1,16 +1,17 @@
 import React from 'react'
-import { Box, Heading, Text, Grid, GridItem, Flex, Button, Input } from '@chakra-ui/react'
+import { Box, Heading, Text, Grid, GridItem, Flex, Button, Input, Image } from '@chakra-ui/react'
 import { Icon } from '@iconify/react'
 
 export default function Card({name, price, sale_price}) {
   return (
         <Grid templateColumns='repeat(12, 1fr)'  w="100%">
           <GridItem >
-            <Box w="120px" h="120px" border="1px solid #c0c0c0" borderRadius={9}>
+            <Flex w="120px" h="120px"  alignItems="center" zIndex={1}>
+             <Image w='100%' boxSize="100%" h="" border="1px solid #c0c0c0" zIndex={0} src='http://codeby.vteximg.com.br/arquivos/ids/159959-800-1029/truffon-meio-amargo.png?v=636930938547630000'/>
 
-            </Box>
+            </Flex>
           </GridItem>
-          <GridItem colSpan={8}>
+          <GridItem colSpan={8} pl={2}>
             <Box h="100%">
               <Text fontSize={16} color="#7f858d">Item:</Text>
               <Heading as="h3" lineHeight={1} fontWeight={600} color="#42464d" h="40%">{name}</Heading>
