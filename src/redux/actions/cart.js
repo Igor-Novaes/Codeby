@@ -3,13 +3,18 @@ export const addToCart = (item) => ({
   payload: item,
 });
 
-export const editItem = (itemId, amount) => ({
+export const editItem = (id, quantity) => ({
   type: '@cart/EDIT',
-  payload: { itemId, amount },
+  payload: { id, quantity },
 });
 
   
-export const removeItem = (itemId) => ({
+export const removeItem = (id) => ({
   type: '@cart/REMOVE',
+  payload: { id },
+});
+
+export const clearCart = () => ({
+  type: '@cart/CLEAR',
 });
   

@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+Use this command to install all project dependencies
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -14,57 +18,32 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+<h1>Libraries used</h1>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>Redux</h3>
+I used redux and redux-persist to improve the shopping cart, thus having the possibility to add and remove products and change their quantities.<br><br>
 
-### `npm run build`
+<h3>Chakra</h3>
+I commonly use Material UI as a component library, but I chose to use Chakra, as I find it simpler for small applications<br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h3>RouterRouter<h3>
+For the creation of the routes I chose to use react-router-dom because it is the most common and the most used for the manipulation of the routes<br><br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h1>Project Structure</h1>
+<h2>The project, in addition to the default folders, has four folders with sub-folders and files</h2><br><br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3>Components</h3>
+Here are all the reusable components of the application<br><br>
 
-### `npm run eject`
+<h3>Pages</h3>
+I separated this folder to put the two pages that the application has<br><br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h3>Redux</h3>
+On this page are the action reducers and stores to carry out the persistence of items in the cart<br><br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3>Routes</h3>
+Here is the configuration of the routes in the browser that the application has<br><br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h1>Considerations</h1>
+<h3>I chose to make a layout a little more primardo, to be able to use some interesting tools, some things like the search bar in the header were placed just for style. I took the liberty of creating a cart a little more enriched and visually different but following the requested features</h3>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

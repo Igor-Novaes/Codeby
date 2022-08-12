@@ -32,13 +32,13 @@ export default function Home() {
 
 
   return (
-    <Box  w="100%" h="100%" p={4} px={40}>
+    <Box  w="100%" h="100%" p={{sm:1, md:2, lg:4}} px={40}>
         <Box>
             <Heading textAlign="center" paddingTop={0} py={4} pb={6}>
-                SHOPP
+                OUR PRODUCTS
             </Heading>
            { data 
-           ? <SimpleGrid columns={4}>
+           ? <SimpleGrid columns={{sm:1, md:3, lg:4, xl:5}} gap={8} columnGap={8}>
                 {data?.items?.map((item)=>(<CardHome {...item}/>))}
             </SimpleGrid>
             : <Flex w="100%" justifyContent="center"><Spinner color="#ff6500"/></Flex>

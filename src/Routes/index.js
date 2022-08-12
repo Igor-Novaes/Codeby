@@ -11,7 +11,6 @@ import Header from "../Components/Header/Header";
       <RoutesDOM>
         <Route element = { <Cart/> }  path="/cart" exact />
         <Route element = { <Home/> }  path="/" exact/>
-
       </RoutesDOM>
 
     </BrowserRouter>
