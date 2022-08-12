@@ -67,12 +67,12 @@ export default function Cart() {
                 <AlertIcon />
                 Your purchase value is above $10. The shipping of your products will have no cost!
             </Alert>}
-            </VStack>   
-            <Flex mt={8}>
+            <Flex mt={8} w="100%">
                 <Heading>Total:&nbsp;</Heading>
                 <Heading color="#1f9050">R${total}</Heading>
             </Flex>    
-            <Button w="100%" mt={8} bg="#ff6500" color="#fff" fontWeight="600">PURCHASE</Button>            
+            </VStack>   
+            <Button w="100%" mt={8} bg="#ff6500" color="#fff" fontWeight="600" _hover={{bg: "#D35705"}}>PURCHASE</Button>            
         </Box> 
     </Box>
   )
